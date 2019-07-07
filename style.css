@@ -1,0 +1,309 @@
+:root {
+    --dark-blue: #011627;
+    --silver-white: #fdfffc;
+    --aquamarine: #2ec4b6;
+    --primary-red: #e71d36;
+    --copper-gold: #ff9f1c;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    height: 100%;
+    background-color: var(--dark-blue);
+    margin: 0;
+}
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 550px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-blue);
+    overflow-x: hidden;
+
+}
+
+.sidenav .logo{
+    font-family: Stockport Double Outline Double-Outline;
+    font-size: 186px;
+    margin: 0;
+    position: relative;
+    top: 144px;
+    left: 117px;
+    color: var(--silver-white);
+    font-weight: normal;
+}
+
+.sidenav .links {
+    width: inherit;
+    position: relative;
+    top: 281px;
+    left: 117px;
+    font-family: Vanity;
+    font-style: italic;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-stretch: expanded;
+}
+
+/* The navigation menu links */
+.sidenav .nav-item {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 73px;
+    color: #818181;
+    display: block;
+    position: relative;
+    color: var(--copper-gold);
+}
+.sidenav .nav-item-active {
+    
+    font-weight: bold;
+}
+
+.main{
+    margin-left: 550px;
+    overflow-x: hidden;
+}
+
+
+/*home*/
+
+#home{
+    position: relative;
+    font-family: stockport;
+    height: inherit;
+                         
+}
+
+.name{
+    grid-area: name;
+    align-self: end;
+    position: absolute;
+    left: 50px;
+    font-size: 120px;
+    top: 200px;
+    color: var(--silver-white);
+    font-weight: unset;
+    
+}
+
+.verbose{
+    grid-area: verbose;
+    align-self: start;
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    font-size: 60px;
+    color: var(--primary-red);
+    font-weight: unset;
+}
+
+.home-img{
+    grid-area: image;
+    width: 602px;
+    height: 949px;
+    position: absolute;
+    left: 238px;
+    z-index: -10;
+    opacity: 0.8;
+}
+
+.sms{
+    position: absolute;
+    left: 900px;
+    top: 65px;
+}
+
+.sms i{
+    color: var(--aquamarine);
+    padding: 0 40px;
+    display: inline;
+}
+
+
+/*Projects*/
+
+#projects{
+    margin-top: 130vh;
+    font-family: stockport;
+    margin-left: 150px;
+
+}
+
+.project{
+    display: grid;
+    background-image: url(/assets/StockSnap_HZQAFTAFAB.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 34px;
+    padding-bottom: 15px;
+    margin: 40px 0;
+    
+    
+}
+
+.project:nth-child(even){
+    margin-right: 80px;
+    grid-template-areas: 'technologies title'
+                         'technologies description'
+                         'technologies actions';
+}
+
+.project:nth-child(odd){
+    margin-left: 80px;
+    grid-template-areas: 'title technologies'
+                         'description technologies'
+                         'actions technologies';
+}
+
+.project .title{
+    grid-area: title;
+    color: var(--primary-red);
+    font-size: 45px;
+    letter-spacing: 20px;
+    text-align: end;
+    margin: 0;
+}
+
+.project:nth-child(odd) .title{
+    text-align: start;
+    padding-left: 10px;
+}
+
+.project .description{
+    grid-area: description;
+    text-align: end;
+    font-size: 30px;
+    color: var(--silver-white);
+    align-self: end;
+}
+
+.project:nth-child(odd) .description{
+    text-align: start;
+    padding-left: 10px;
+}
+
+.project .actions{
+    grid-area: actions;
+}
+
+.project .actions a{
+    color: var(--primary-red);
+    font-size: 40px;
+    margin-left: 55px;
+}
+
+.project .actions i{
+    color: black;
+    padding: 0 10px;
+}
+
+.project .technologies{
+    grid-area: technologies;
+    min-width: 400px;
+}
+
+
+.project .technologies .title{
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-align: start;
+    padding-left: 40px;
+    color: var(--silver-white);
+}
+
+.project .technologies li{
+    font-size: 30px;
+    color: var(--aquamarine);
+    padding-top: 30px;
+    list-style: none;
+}
+
+.project:nth-child(2){
+    background-image: url(/assets/FSPLFPQBCZ.jpg)
+}
+
+.project:nth-child(3){
+    background-image: url(/assets/1ZJSU7ORAZ.jpg)
+}
+
+/*Experience*/
+
+#experience{
+    margin-top: 30vh;
+    font-family: stockport;
+    margin-left: 150px;
+
+}
+
+.work{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+
+
+.ball{
+    background-color: var(--primary-red);
+    border-radius: 50%;
+    width: 130px;
+}
+
+.line{
+    border-left: 10px solid var(--primary-red);
+    height: 193px;
+    position: relative;
+    left: 45%;
+    top: 0;
+}
+
+
+.company{
+    font-family: stockport shadow;
+    font-size: 54px;
+    text-align: end;
+    right: -130px;
+    position: relative;
+    top: 30%;
+    color: var(--aquamarine);
+    text-shadow: 0 3px 0 var(--silver-white);
+}
+
+.company:nth-child(odd){
+    text-align: start;
+    right:-140px;
+}
+
+.detail{
+    text-align: start;
+    position: relative;
+    left: -50px;
+}
+.detail:nth-child(even){
+    left: 25px;
+}
+
+.detail p{
+    margin: 0;
+}
+
+.detail .work-name{
+    font-size: 44px;
+    color: var(--copper-gold);
+    margin-bottom: 15px;
+}
+
+.detail .date, .detail .description{
+    font-size: 30px;
+    color: var(--silver-white);
+
+}
