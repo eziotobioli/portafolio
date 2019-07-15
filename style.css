@@ -230,11 +230,11 @@ body {
 }
 
 .project:nth-child(2){
-    background-image: url(/portafolio/assets/FSPLFPQBCZ.jpg)
+    background-image: url('/portafolio/assets/FSPLFPQBCZ.jpg')
 }
 
 .project:nth-child(3){
-    background-image: url(/portafolio/assets/1ZJSU7ORAZ.jpg)
+    background-image: url('/portafolio/assets/1ZJSU7ORAZ.jpg')
 }
 
 /*Experience*/
