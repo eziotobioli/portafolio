@@ -142,7 +142,7 @@ body {
 
 .project{
     display: grid;
-    background-image: url(portafolio/assets/StockSnap_HZQAFTAFAB.jpg);
+    background-image: url('/portafolio/assets/techsupport-opacity.jpg');
     background-size: cover;
     background-position: center;
     padding-top: 34px;
@@ -230,11 +230,11 @@ body {
 }
 
 .project:nth-child(2){
-    background-image: url('/portafolio/assets/FSPLFPQBCZ.jpg')
+    background-image: url('/portafolio/assets/portafolio-opacity.jpg')
 }
 
 .project:nth-child(3){
-    background-image: url('/portafolio/assets/1ZJSU7ORAZ.jpg')
+    background-image: url('/portafolio/assets/konnect-opacity.jpg')
 }
 
 /*Experience*/
