@@ -8,7 +8,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     height: 100%;
@@ -32,7 +32,7 @@ body {
 
 }
 
-.sidenav .logo{
+.sidenav .logo {
     font-family: Stockport Double Outline Double-Outline;
     font-size: 186px;
     margin: 0;
@@ -65,12 +65,13 @@ body {
     position: relative;
     color: var(--copper-gold);
 }
+
 .sidenav .nav-item-active {
-    
+
     font-weight: bold;
 }
 
-.main{
+.main {
     margin-left: 550px;
     overflow-x: hidden;
 }
@@ -78,14 +79,14 @@ body {
 
 /*home*/
 
-#home{
+#home {
     position: relative;
     font-family: stockport;
     height: inherit;
-                         
+
 }
 
-.name{
+.name {
     grid-area: name;
     align-self: end;
     position: absolute;
@@ -94,10 +95,10 @@ body {
     top: 200px;
     color: var(--silver-white);
     font-weight: unset;
-    
+
 }
 
-.verbose{
+.verbose {
     grid-area: verbose;
     align-self: start;
     position: absolute;
@@ -108,7 +109,7 @@ body {
     font-weight: unset;
 }
 
-.home-img{
+.home-img {
     grid-area: image;
     width: 602px;
     height: 949px;
@@ -118,13 +119,13 @@ body {
     opacity: 0.8;
 }
 
-.sms{
+.sms {
     position: absolute;
     left: 900px;
     top: 65px;
 }
 
-.sms i{
+.sms i {
     color: var(--aquamarine);
     padding: 0 40px;
     display: inline;
@@ -133,14 +134,14 @@ body {
 
 /*Projects*/
 
-#projects{
+#projects {
     margin-top: 130vh;
     font-family: stockport;
     margin-left: 150px;
 
 }
 
-.project{
+.project {
     display: grid;
     background-image: url('/portafolio/assets/texhsuppoer-opacity.jpg');
     background-size: cover;
@@ -148,25 +149,25 @@ body {
     padding-top: 34px;
     padding-bottom: 15px;
     margin: 40px 0;
-    
-    
+    border: 1px solid var(--copper-gold);
+
 }
 
-.project:nth-child(even){
+.project:nth-child(even) {
     margin-right: 80px;
     grid-template-areas: 'technologies title'
-                         'technologies description'
-                         'technologies actions';
+        'technologies description'
+        'technologies actions';
 }
 
-.project:nth-child(odd){
+.project:nth-child(odd) {
     margin-left: 80px;
     grid-template-areas: 'title technologies'
-                         'description technologies'
-                         'actions technologies';
+        'description technologies'
+        'actions technologies';
 }
 
-.project .title{
+.project .title {
     grid-area: title;
     color: var(--primary-red);
     font-size: 45px;
@@ -175,12 +176,12 @@ body {
     margin: 0;
 }
 
-.project:nth-child(odd) .title{
+.project:nth-child(odd) .title {
     text-align: start;
     padding-left: 10px;
 }
 
-.project .description{
+.project .description {
     grid-area: description;
     text-align: end;
     font-size: 30px;
@@ -188,33 +189,33 @@ body {
     align-self: end;
 }
 
-.project:nth-child(odd) .description{
+.project:nth-child(odd) .description {
     text-align: start;
     padding-left: 10px;
 }
 
-.project .actions{
+.project .actions {
     grid-area: actions;
 }
 
-.project .actions a{
+.project .actions a {
     color: var(--primary-red);
     font-size: 40px;
     margin-left: 55px;
 }
 
-.project .actions i{
+.project .actions i {
     color: black;
     padding: 0 10px;
 }
 
-.project .technologies{
+.project .technologies {
     grid-area: technologies;
     min-width: 400px;
 }
 
 
-.project .technologies .title{
+.project .technologies .title {
     font-size: 40px;
     letter-spacing: 5px;
     text-align: start;
@@ -222,44 +223,44 @@ body {
     color: var(--silver-white);
 }
 
-.project .technologies li{
+.project .technologies li {
     font-size: 30px;
     color: var(--aquamarine);
     padding-top: 30px;
     list-style: none;
 }
 
-.project:nth-child(2){
+.project:nth-child(2) {
     background-image: url('/portafolio/assets/portafolio-opacity.jpg')
 }
 
-.project:nth-child(3){
+.project:nth-child(3) {
     background-image: url('/portafolio/assets/konnect-opacity.jpg')
 }
 
 /*Experience*/
 
-#experience{
+#experience {
     margin-top: 30vh;
     font-family: stockport;
     margin-left: 150px;
 
 }
 
-.work{
+.work {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
 }
 
 
 
-.ball{
+.ball {
     background-color: var(--primary-red);
     border-radius: 50%;
     width: 130px;
 }
 
-.line{
+.line {
     border-left: 10px solid var(--primary-red);
     height: 193px;
     position: relative;
@@ -268,7 +269,7 @@ body {
 }
 
 
-.company{
+.company {
     font-family: stockport shadow;
     font-size: 54px;
     text-align: end;
@@ -279,31 +280,33 @@ body {
     text-shadow: 0 3px 0 var(--silver-white);
 }
 
-.company:nth-child(odd){
+.company:nth-child(odd) {
     text-align: start;
-    right:-140px;
+    right: -140px;
 }
 
-.detail{
+.detail {
     text-align: start;
     position: relative;
     left: -50px;
 }
-.detail:nth-child(even){
+
+.detail:nth-child(even) {
     left: 25px;
 }
 
-.detail p{
+.detail p {
     margin: 0;
 }
 
-.detail .work-name{
+.detail .work-name {
     font-size: 44px;
     color: var(--copper-gold);
     margin-bottom: 15px;
 }
 
-.detail .date, .detail .description{
+.detail .date,
+.detail .description {
     font-size: 30px;
     color: var(--silver-white);
 
